@@ -1,0 +1,28 @@
+.navbar{
+    background:#1b745ee5 ;
+
+    .nav-item{
+        position: relative;
+        padding: 5px 0;
+        color: var(--light-green);
+        .active{
+            color: #faba84;
+        }
+        &:hover{
+            color: #faba84;
+            transition: all .4s ease;
+           
+            &::after{
+                content: '';
+                height: 1px;
+                background: #faba84;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all .4s ease;
+
+            }
+        }
+    }
+}

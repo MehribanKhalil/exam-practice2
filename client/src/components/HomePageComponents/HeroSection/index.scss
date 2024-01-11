@@ -1,0 +1,86 @@
+.slider{
+
+    .slide1{
+        background: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl4.jpg');
+    }
+
+    .slide2{
+        background: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl7.jpg');
+    }
+
+    .slide3{
+        background: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl1-967x725.jpg');
+    }
+   
+
+    .slide{
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+    }
+
+    .swiper-button-prev{
+        font-style: italic;
+        color: var(--main-color);
+        &::after{
+            content: 'Prev';
+            font-size:18px;
+
+        }
+        &::before{
+            
+            height: 1px;
+            background: var(--main-color);
+            width: 0%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .4s ease;
+           
+        }
+
+        &:hover {
+            &::before{
+                width: 100%;
+                
+            }
+    
+        }
+    }
+
+    .swiper-button-next{
+        font-style: italic;
+        color: var(--main-color);
+        font-size: 17px;
+        &::after{
+            content: 'Next';
+            font-size:18px;
+            
+        }
+
+        ::before{
+            content: '';
+            height: 1px;
+            background: var(--main-color);
+            width: 0%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .4s ease;
+           
+        }
+
+        &:hover {
+            &::before{
+                width: 100%;
+                
+            }
+    
+        }
+    }
+}
